@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/jp.co.sony.mc.euiccmemoryreset.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/jp.co.sony.mc.euiccmemoryreset.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/sony/sm8550-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -147,11 +148,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/android.hardware.drm-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.widevine \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
-    vendor/sony/sm8550-common/proprietary/vendor/bin/hw/android.hardware.health-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.qti \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@2.0-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
@@ -180,8 +181,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/iddd:$(TARGET_COPY_OUT_VENDOR)/bin/iddd \
     vendor/sony/sm8550-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/sony/sm8550-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
-    vendor/sony/sm8550-common/proprietary/vendor/bin/init.kernel.post_boot-kalama.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot-kalama.sh \
-    vendor/sony/sm8550-common/proprietary/vendor/bin/init.kernel.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot.sh \
     vendor/sony/sm8550-common/proprietary/vendor/bin/init.qcom.class_core.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.class_core.sh \
     vendor/sony/sm8550-common/proprietary/vendor/bin/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.post_boot.sh \
     vendor/sony/sm8550-common/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
@@ -216,6 +215,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/qsap_dcfd:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_dcfd \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/qsap_location:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_location \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/qsap_qapeservice:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_qapeservice \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/qsap_sensors:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_sensors \
+    vendor/sony/sm8550-common/proprietary/vendor/bin/qsap_voiceui:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_voiceui \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/sony/sm8550-common/proprietary/vendor/bin/qtigetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtigetprop \
@@ -233,7 +237,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/bin/ta_qmi_service:$(TARGET_COPY_OUT_VENDOR)/bin/ta_qmi_service \
     vendor/sony/sm8550-common/proprietary/vendor/bin/tad:$(TARGET_COPY_OUT_VENDOR)/bin/tad \
     vendor/sony/sm8550-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
-    vendor/sony/sm8550-common/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
     vendor/sony/sm8550-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/sony/sm8550-common/proprietary/vendor/bin/trusteduilistener:$(TARGET_COPY_OUT_VENDOR)/bin/trusteduilistener \
     vendor/sony/sm8550-common/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
@@ -357,14 +360,13 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.health-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
@@ -400,6 +402,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -434,6 +440,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
@@ -450,10 +459,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/media_codecs_performance_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama.xml \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/media_codecs_performance_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_vendor.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/media_kalama/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kalama/video_system_specs.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
@@ -510,12 +515,17 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
+    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -789,6 +799,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libqcodec2_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_utils.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libqcodec2_v4l2codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_v4l2codec.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libqconfigclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqconfigclient.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib/libqesdk2_0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk2_0.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib/libqesdk_manager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqesdk_manager.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
@@ -1170,6 +1182,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libCOSNet_spatial_qnn_quantized.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCOSNet_spatial_qnn_quantized.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/libDcfHalBleProto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalBleProto.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/libDcfHalFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalFramework.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/libDcfHalLogger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalLogger.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/libDcfHalQtiMutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDcfHalQtiMutex.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEvrcSwCodec.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFileMux_proprietary.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
@@ -1191,6 +1207,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libQtiRilLoadable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQtiRilLoadable.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/libSensorsInterface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSensorsInterface.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libSnpeHtpPrepare.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpPrepare.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libSnpeHtpV73Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSnpeHtpV73Stub.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libSonyDisplayProperties.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyDisplayProperties.so \
@@ -1370,6 +1387,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libloc_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_util.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/liblocation_api_msg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api_msg.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/liblocation_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_client_api.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/liblocation_integration_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_integration_api.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/liblocation_qesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_qesdk.so \
@@ -1441,6 +1459,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libprocomp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocomp.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libprotobuf-c-idd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-c-idd.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libpsmoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpsmoptfeature.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/libqape_oem_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqape_oem_ext.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqapesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqapesdk.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_basecodec.so \
@@ -1697,6 +1716,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/local_libcamera_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/local_libcamera_metadata.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/ls_nq_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ls_nq_client.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.nqx.default.hw.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/qcrilInterfaces.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilInterfaces.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/qcrilMarshal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilMarshal.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/qcrilNrQmiModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrilNrQmiModule.so \
@@ -1735,6 +1755,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmframework.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.libdpmtcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmtcm.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.libmwqemiptablemgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libmwqemiptablemgr.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@2.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -1892,12 +1913,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.qesdsys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdsys-V3-ndk.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.display@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.display@2.0.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.display@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.display@2.1.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.display@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.display@2.2.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.display@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.display@2.3.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.display@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.display@2.4.so \
-    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.display@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.display@2.5.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.thermal@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.system.idd@1.0.so \
@@ -1906,6 +1921,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.aidlmiscta-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.aidlmiscta-V1-ndk_platform.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.aidlradio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.aidlradio-V1-ndk.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.nfc@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.radio@1.0.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.security.secd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.security.secd@1.1.so \
     vendor/sony/sm8550-common/proprietary/vendor/lib64/vendor.somc.hardware.videoeffect-V1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.videoeffect-V1-impl.so \
@@ -1926,10 +1942,13 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
+    EuiccGoogle \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
+    EuiccMemoryReset \
     WfdService \
     dpmserviceapp \
     ims \
@@ -1966,7 +1985,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss-aidl-service-qti \
-    android.hardware.health-service.qti \
     android.hardware.radio.config \
     android.hardware.radio.data \
     android.hardware.radio.messaging \
@@ -1975,15 +1993,12 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sim \
     android.hardware.radio.voice \
     android.hardware.security.keymint-service-qti \
-    bluetooth_audio \
     bttpi-saidl \
     c2_manifest_vendor \
     c2_manifest_vendor_audio \
     dataconnection-saidl \
     deviceinfo-saidl \
     manifest_android.hardware.drm-service.widevine \
-    manifest_non_qmaa \
-    manifest_non_qmaa_extn \
     memtrack_qti \
     qcrilhook-saidl \
     qms-saidl \
