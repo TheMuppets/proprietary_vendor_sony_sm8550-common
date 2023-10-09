@@ -80,15 +80,10 @@
         <perceptionPoint brightness="1" perception="1"/>
     </perceptionMap>
     <densityMapping>
-          <density>
-            <height>2560</height>
-            <width>1096</width>
-            <density>420</density>
-          </density>
-          <density>
-            <height>3840</height>
-            <width>1644</width>
-            <density>630</density>
-          </density>
+        <density>
+            <height>2520</height>
+            <width>1080</width>
+            <density>450</density>
+        </density>
     </densityMapping>
 </displayConfiguration>

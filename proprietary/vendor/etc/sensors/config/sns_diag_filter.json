@@ -447,6 +447,12 @@
       "type" : "int",
       "ver" : "0",
       "data" : "1"
+    },
+    "fan_control":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
     }
   }
 }
