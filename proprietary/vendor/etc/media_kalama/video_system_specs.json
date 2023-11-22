@@ -39,7 +39,11 @@
             //  0x1: 8 bit: enable.  10 bit: disable
             //  0x2: 8 bit: disable. 10 bit: enable
             //  0x3: 8 bit: enable.  10 bit: enable
-            "enc_bitrate_savings": 0
+            "enc_bitrate_savings": 0,
+            // create a new thread to execute vpp start
+            // if set to a positive integer like 2000, mian thread will wait for vpp start at most 2s
+            // if set to 0, just execute vpp start in main thread.
+            "vpp_max_retry_vpp_start_timeout": 0
         },
 
         // "DolbyVision": {

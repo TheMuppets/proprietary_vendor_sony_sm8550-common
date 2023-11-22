@@ -2,7 +2,7 @@
 #==============================================================================
 #       init.qti.media.sh
 #
-# Copyright (c) 2020-2022, Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2023, Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -51,7 +51,7 @@ case "$target" in
     "kalama")
         setprop vendor.mm.target.enable.qcom_parser 0
         setprop vendor.media.target_variant "_kalama"
-        if [ $build_codename -le "13" ]; then
+        if [ $build_codename -le "14" ]; then
             setprop vendor.netflix.bsp_rev "Q8550-36432-1"
         fi
         ;;
