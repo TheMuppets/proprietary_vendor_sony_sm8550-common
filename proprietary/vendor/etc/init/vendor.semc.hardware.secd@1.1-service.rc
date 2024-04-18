@@ -1,9 +1,10 @@
-# Copyright (c) 2017 Sony Mobile Communications Inc.
+# Copyright 2017, 2024 Sony Corporation
 # All rights, including trade secret rights, reserved.
 
 on late-init
     setprop vendor.keyprovd.suntory.prov "false"
     setprop vendor.sdm.wakeup "false"
+    setprop vendor.secd.wakeup "false"
 
 # create spc database directory
 on post-fs-data
