@@ -581,7 +581,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss-aidl-service-qti",
+	name: "android.hardware.gnss-aidl-service-qti.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
 	filename_from_src: true,
@@ -590,7 +590,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.config",
+	name: "android.hardware.radio.config.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
 	filename_from_src: true,
@@ -599,7 +599,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.data",
+	name: "android.hardware.radio.data.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.data.xml",
 	filename_from_src: true,
@@ -608,7 +608,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.messaging",
+	name: "android.hardware.radio.messaging.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.messaging.xml",
 	filename_from_src: true,
@@ -617,7 +617,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.modem",
+	name: "android.hardware.radio.modem.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.modem.xml",
 	filename_from_src: true,
@@ -626,7 +626,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.network",
+	name: "android.hardware.radio.network.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.network.xml",
 	filename_from_src: true,
@@ -635,7 +635,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.sim",
+	name: "android.hardware.radio.sim.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.sim.xml",
 	filename_from_src: true,
@@ -644,7 +644,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.radio.voice",
+	name: "android.hardware.radio.voice.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.voice.xml",
 	filename_from_src: true,
@@ -653,7 +653,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.security.keymint-service-qti",
+	name: "android.hardware.security.keymint-service-qti.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml",
 	filename_from_src: true,
@@ -662,7 +662,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "bttpi-saidl",
+	name: "bttpi-saidl.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/bttpi-saidl.xml",
 	filename_from_src: true,
@@ -671,7 +671,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor",
+	name: "c2_manifest_vendor.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
 	filename_from_src: true,
@@ -680,7 +680,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor_audio",
+	name: "c2_manifest_vendor_audio.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
 	filename_from_src: true,
@@ -689,7 +689,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "dataconnection-saidl",
+	name: "dataconnection-saidl.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/dataconnection-saidl.xml",
 	filename_from_src: true,
@@ -698,7 +698,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "deviceinfo-saidl",
+	name: "deviceinfo-saidl.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/deviceinfo-saidl.xml",
 	filename_from_src: true,
@@ -707,7 +707,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm-service.widevine",
+	name: "manifest_android.hardware.drm-service.widevine.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml",
 	filename_from_src: true,
@@ -716,7 +716,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "qcrilhook-saidl",
+	name: "qcrilhook-saidl.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/qcrilhook-saidl.xml",
 	filename_from_src: true,
@@ -725,7 +725,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "qms-saidl",
+	name: "qms-saidl.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/qms-saidl.xml",
 	filename_from_src: true,
@@ -734,7 +734,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "qtiradio-saidl",
+	name: "qtiradio-saidl.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/qtiradio-saidl.xml",
 	filename_from_src: true,
@@ -743,7 +743,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.egistec.hardware.fingerprint",
+	name: "vendor.egistec.hardware.fingerprint.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.egistec.hardware.fingerprint.xml",
 	filename_from_src: true,
@@ -752,7 +752,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.gnss-service",
+	name: "vendor.qti.gnss-service.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml",
 	filename_from_src: true,
@@ -761,7 +761,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.limits-service",
+	name: "vendor.qti.hardware.limits-service.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml",
 	filename_from_src: true,
@@ -770,7 +770,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.perf",
+	name: "vendor.qti.hardware.perf.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml",
 	filename_from_src: true,
@@ -779,7 +779,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.power.powermodule",
+	name: "vendor.qti.hardware.power.powermodule.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.power.powermodule.xml",
 	filename_from_src: true,
@@ -788,7 +788,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.qconfig@1.0-service",
+	name: "vendor.qti.hardware.qconfig@1.0-service.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml",
 	filename_from_src: true,
@@ -797,7 +797,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.radio.am",
+	name: "vendor.qti.hardware.radio.am.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.am.xml",
 	filename_from_src: true,
@@ -806,7 +806,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.radio.ims",
+	name: "vendor.qti.hardware.radio.ims.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.ims.xml",
 	filename_from_src: true,
@@ -815,7 +815,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.radio.qtiradioconfig",
+	name: "vendor.qti.hardware.radio.qtiradioconfig.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml",
 	filename_from_src: true,
@@ -824,7 +824,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.servicetracker@1.2-service",
+	name: "vendor.qti.hardware.servicetracker@1.2-service.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
 	filename_from_src: true,
@@ -833,7 +833,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.vpp@2.0-service",
+	name: "vendor.qti.hardware.vpp@2.0-service.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml",
 	filename_from_src: true,
@@ -842,7 +842,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.wifidisplaysession-service",
+	name: "vendor.qti.hardware.wifidisplaysession-service.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.wifidisplaysession-service.xml",
 	filename_from_src: true,
@@ -851,7 +851,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.semc.hardware.extlight-somc",
+	name: "vendor.semc.hardware.extlight-somc.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.semc.hardware.extlight-somc.xml",
 	filename_from_src: true,
@@ -860,7 +860,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.somc.hardware.videoeffect",
+	name: "vendor.somc.hardware.videoeffect.xml",
 	owner: "sony",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.somc.hardware.videoeffect.xml",
 	filename_from_src: true,

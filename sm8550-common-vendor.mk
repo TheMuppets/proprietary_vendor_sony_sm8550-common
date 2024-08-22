@@ -1603,38 +1603,38 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.0-java \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
-    android.hardware.gnss-aidl-service-qti \
-    android.hardware.radio.config \
-    android.hardware.radio.data \
-    android.hardware.radio.messaging \
-    android.hardware.radio.modem \
-    android.hardware.radio.network \
-    android.hardware.radio.sim \
-    android.hardware.radio.voice \
-    android.hardware.security.keymint-service-qti \
-    bttpi-saidl \
-    c2_manifest_vendor \
-    c2_manifest_vendor_audio \
-    dataconnection-saidl \
-    deviceinfo-saidl \
-    manifest_android.hardware.drm-service.widevine \
-    qcrilhook-saidl \
-    qms-saidl \
-    qtiradio-saidl \
-    vendor.egistec.hardware.fingerprint \
-    vendor.qti.gnss-service \
-    vendor.qti.hardware.limits-service \
-    vendor.qti.hardware.perf \
-    vendor.qti.hardware.power.powermodule \
-    vendor.qti.hardware.qconfig@1.0-service \
-    vendor.qti.hardware.radio.am \
-    vendor.qti.hardware.radio.ims \
-    vendor.qti.hardware.radio.qtiradioconfig \
-    vendor.qti.hardware.servicetracker@1.2-service \
-    vendor.qti.hardware.vpp@2.0-service \
-    vendor.qti.hardware.wifidisplaysession-service \
-    vendor.semc.hardware.extlight-somc \
-    vendor.somc.hardware.videoeffect
+    android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.radio.config.xml \
+    android.hardware.radio.data.xml \
+    android.hardware.radio.messaging.xml \
+    android.hardware.radio.modem.xml \
+    android.hardware.radio.network.xml \
+    android.hardware.radio.sim.xml \
+    android.hardware.radio.voice.xml \
+    android.hardware.security.keymint-service-qti.xml \
+    bttpi-saidl.xml \
+    c2_manifest_vendor.xml \
+    c2_manifest_vendor_audio.xml \
+    dataconnection-saidl.xml \
+    deviceinfo-saidl.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
+    qcrilhook-saidl.xml \
+    qms-saidl.xml \
+    qtiradio-saidl.xml \
+    vendor.egistec.hardware.fingerprint.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.limits-service.xml \
+    vendor.qti.hardware.perf.xml \
+    vendor.qti.hardware.power.powermodule.xml \
+    vendor.qti.hardware.qconfig@1.0-service.xml \
+    vendor.qti.hardware.radio.am.xml \
+    vendor.qti.hardware.radio.ims.xml \
+    vendor.qti.hardware.radio.qtiradioconfig.xml \
+    vendor.qti.hardware.servicetracker@1.2-service.xml \
+    vendor.qti.hardware.vpp@2.0-service.xml \
+    vendor.qti.hardware.wifidisplaysession-service.xml \
+    vendor.semc.hardware.extlight-somc.xml \
+    vendor.somc.hardware.videoeffect.xml
 
 PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
