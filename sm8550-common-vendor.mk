@@ -283,7 +283,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/sony/sm8550-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/sony/sm8550-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
@@ -397,10 +396,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/windnoise_reduction.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction.data \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/windnoise_reduction_back.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_back.data \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/windnoise_reduction_stat.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_stat.data \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/windnoise_reduction_stat_back.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_stat_back.data \
     vendor/sony/sm8550-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/sony/sm8550-common/proprietary/vendor/firmware/egisap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/egisap.mbn \
     vendor/sony/sm8550-common/proprietary/vendor/firmware/tzsecuredata.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/tzsecuredata.mbn \
@@ -519,9 +514,6 @@ PRODUCT_PACKAGES += \
     libar-pal \
     libats \
     libaudio_log_utils \
-    libaudiokeymgr \
-    libaudiosnpewrapper \
-    libaudiosnpewrapper_context \
     libbacklight-calib \
     libbatching \
     libbluetooth_audio_session_aidl_qti \
@@ -761,7 +753,6 @@ PRODUCT_PACKAGES += \
     libqtikeymint \
     librcc \
     librcmask \
-    librebuffering \
     libree_bix_agent \
     libril-db \
     libril-legacy \
@@ -860,7 +851,6 @@ PRODUCT_PACKAGES += \
     libwvutil \
     libxml \
     libxtadapter \
-    libznr \
     ls_nq_client \
     nfc_nci.nqx.default.hw \
     qcrilInterfaces \
@@ -884,10 +874,8 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     sensors.ssc \
     libasphere \
-    libdnnrwrapper \
     libquasar \
     libshoebox \
-    libznrwrapper \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -973,8 +961,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0 \
-    vendor.qti.hardware.radio.atcmdfwd-V1-ndk \
-    vendor.qti.hardware.radio.atcmdfwd@1.0 \
     vendor.qti.hardware.radio.ims-V9-ndk \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
@@ -1302,7 +1288,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.semc.hardware.extlight-somc.xml \
     vendor.somc.hardware.videoeffect.xml \
-    ATFWD-daemon \
     adpl \
     adsprpcd \
     cdsprpcd \
