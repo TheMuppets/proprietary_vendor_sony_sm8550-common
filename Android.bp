@@ -10,7 +10,6 @@ soong_namespace {
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/dataservices",
-        "vendor/sony/pdx234",
         "vendor/sony/sm8550-common",
 	],
 }
@@ -1959,6 +1958,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libbtnv.so"],
 			shared_libs: ["libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libc++_shared",
+	owner: "sony",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libc++_shared.so"],
+			shared_libs: ["libc", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -10917,6 +10933,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.semc.hardware.extlight-V1-ndk_platform",
+	owner: "sony",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so"],
+			shared_libs: ["libbinder_ndk", "android.hardware.light-V1-ndk", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.semc.hardware.fingerprint-V1-ndk_platform",
 	owner: "sony",
 	strip: {
@@ -11079,6 +11112,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.somc.hardware.security.secd@1.1.so"],
 			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.somc.hardware.videoeffect-V1-impl",
+	owner: "sony",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.somc.hardware.videoeffect-V1-impl.so"],
+			shared_libs: ["libutils", "liblog", "libcutils", "libbinder_ndk", "vendor.somc.hardware.videoeffect-V1-ndk_platform", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

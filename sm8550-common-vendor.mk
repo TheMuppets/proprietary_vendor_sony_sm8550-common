@@ -43,8 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/kalama_grd/GRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_grd/GRD_workspaceFileXml.qwsp \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/kalama_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_mtp/MTP_acdb_cal.acdb \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/kalama_mtp/MTP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_mtp/MTP_workspaceFileXml.qwsp \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/kalama_qrd/Sony_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_qrd/Sony_acdb_cal.acdb \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/kalama_qrd/Sony_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/kalama_qrd/Sony_workspaceFileXml.qwsp \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/sony/sm8550-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
@@ -132,7 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json \
     vendor/sony/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/displayconfig/display_id_131.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_131.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/sony/sm8550-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
@@ -218,9 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/sony/sm8550-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/sony/sm8550-common/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
@@ -404,46 +398,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/sm8550-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/sony/sm8550-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/sony/sm8550-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_sqe.fw \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b00 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b01 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b02 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.elf \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/a740_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mdt \
     vendor/sony/sm8550-common/proprietary/vendor/firmware/egisap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/egisap.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b00 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b01 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b02 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b03 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b04 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b05 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b06 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b07 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b08 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b09 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b10 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/gmu_gen70200.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70200.bin \
     vendor/sony/sm8550-common/proprietary/vendor/firmware/tzsecuredata.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/tzsecuredata.mbn \
     vendor/sony/sm8550-common/proprietary/vendor/firmware/tzsuntory.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/tzsuntory.mbn \
     vendor/sony/sm8550-common/proprietary/vendor/firmware/tztpm.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/tztpm.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/vpu30_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v_unsigned.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
-    vendor/sony/sm8550-common/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/sony/sm8550-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
@@ -563,6 +521,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
     libbtnv \
+    libc++_shared \
     libcacertclient \
     libcapiv2svacnnvendor \
     libcapiv2svarnnvendor \
@@ -1088,6 +1047,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
+    vendor.semc.hardware.extlight-V1-ndk_platform \
     vendor.semc.hardware.fingerprint-V1-ndk_platform \
     vendor.semc.hardware.thermal@1.0 \
     vendor.semc.system.idd@1.0 \
@@ -1098,6 +1058,7 @@ PRODUCT_PACKAGES += \
     vendor.somc.hardware.nfc@1.0 \
     vendor.somc.hardware.radio@1.0 \
     vendor.somc.hardware.security.secd@1.1 \
+    vendor.somc.hardware.videoeffect-V1-impl \
     vendor.somc.hardware.videoeffect-V1-ndk_platform \
     libQnnHtpV73Skel.cameraqnn \
     bm3a68v08s11n29 \
