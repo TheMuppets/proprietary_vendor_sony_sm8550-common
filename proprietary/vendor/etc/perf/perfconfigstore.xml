@@ -60,8 +60,10 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.nstrat_low_swap" Value="10" />
                 <Prop Name="ro.lmk.nstrat_psi_partial_ms" Value="70" />
                 <Prop Name="ro.lmk.nstrat_psi_complete_ms" Value="70" />
+                <Prop Name="ro.lmk.nstrat_psi_complete_ms" Value="175" Ram="8" />
                 <Prop Name="ro.lmk.psi_scrit_complete_stall_ms" Value="400" />
                 <Prop Name="ro.lmk.nstrat_wmark_boost_factor" Value="4" />
+                <Prop Name="ro.lmk.nstrat_wmark_boost_factor" Value="3" Ram="8" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
                 <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="96" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />

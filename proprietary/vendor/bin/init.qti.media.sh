@@ -51,9 +51,7 @@ case "$target" in
     "kalama")
         setprop vendor.mm.target.enable.qcom_parser 0
         setprop vendor.media.target_variant "_kalama"
-        if [ $build_codename -le "14" ]; then
-            setprop vendor.netflix.bsp_rev "Q8550-36432-1"
-        fi
+        setprop vendor.netflix.bsp_rev "Q8550-36432-1"
         ;;
     "taro")
         setprop vendor.mm.target.enable.qcom_parser 1040479

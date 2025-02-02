@@ -6,12 +6,6 @@ on late-init
     setprop vendor.sdm.wakeup "false"
     setprop vendor.secd.wakeup "false"
 
-# create spc database directory
-on post-fs-data
-    mkdir /data/vendor/pc/ 0770 radio system
-    chown system system /data/vendor/pc/cache_0.dat
-    chown system system /data/vendor/pc/cache_1.dat
-
 # start secd service
 service vendor.semc.hardware.secd-1-1 /vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
     class hal

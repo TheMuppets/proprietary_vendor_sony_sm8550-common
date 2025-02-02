@@ -1,0 +1,15 @@
+# Copyright 2023 Sony Corporation
+# All rights, including trade secret rights, reserved.
+
+# create spc database directory
+on post-fs-data
+    mkdir /data/vendor/pc/ 0770 radio system
+    chown system system /data/vendor/pc/cache_0.dat
+    chown system system /data/vendor/pc/cache_1.dat
+
+# start spc service
+service vendor.semc.hardware.spc /vendor/bin/hw/vendor.semc.hardware.spc-service
+    interface aidl vendor.semc.hardware.spc.ISpc/default
+    class hal
+    user system
+    group system

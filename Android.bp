@@ -15,6 +15,55 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.diaghal-V1-ndk",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.diaghal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm-V1-ndk",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.hardware.fm-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.secure_element@1.0-impl",
     owner: "sony",
     strip: {
@@ -2105,12 +2154,9 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
+                "libcutils",
                 "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libhidlmemory",
-                "android.hidl.allocator@1.0",
-                "vendor.somc.hardware.miscta@1.0",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -4228,9 +4274,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libdevice_security_vendor.so",
             ],
             shared_libs: [
-                "libhidlbase",
                 "liblog",
                 "libutils",
+                "libhidlbase",
                 "vendor.somc.hardware.security.secd@1.1",
                 "libc++",
                 "libc",
@@ -9105,7 +9151,7 @@ cc_prebuilt_library_shared {
                 "qcrilNrSecureMode",
                 "libsystem_health_mon",
                 "libxml2",
-                "libdevice_security_vendor",
+                "libspc_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -11712,6 +11758,35 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libaudioutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libspc_vendor",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libspc_vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbinder_ndk",
+                "liblog",
+                "libutils",
+                "vendor.semc.hardware.spc-V1-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",
@@ -19501,7 +19576,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.semc.hardware.thermal@1.0",
+    name: "vendor.semc.hardware.spc-V1-ndk_platform",
     owner: "sony",
     strip: {
         none: true,
@@ -19509,13 +19584,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.semc.hardware.thermal@1.0.so",
+                "proprietary/vendor/lib64/vendor.semc.hardware.spc-V1-ndk_platform.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -20914,6 +20986,8 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "libc",
                 "libcutils",
+                "libbinder_ndk",
+                "vendor.qti.diaghal-V1-ndk",
                 "libc++",
                 "libm",
                 "libdl",
@@ -21065,6 +21139,10 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
+                "libbinder_ndk",
+                "libbinder",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "vendor.qti.hardware.fm-V1-ndk",
                 "vendor.qti.hardware.fm@1.0",
                 "libc++",
                 "libc",
@@ -21274,6 +21352,7 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.qccsyshal@1.2",
                 "android.hardware.common-V2-ndk",
                 "vendor.qti.qccvndhal_aidl-V1-ndk",
+                "vendor.qti.qccsyshal_aidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21339,6 +21418,7 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.qccsyshal@1.2",
                 "android.hardware.common-V2-ndk",
                 "vendor.qti.qccvndhal_aidl-V1-ndk",
+                "vendor.qti.qccsyshal_aidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21377,6 +21457,7 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.qccsyshal@1.2",
                 "android.hardware.common-V2-ndk",
                 "vendor.qti.qccvndhal_aidl-V1-ndk",
+                "vendor.qti.qccsyshal_aidl-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21668,6 +21749,10 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libgralloctypes",
                 "android.hardware.graphics.mapper@4.0",
+                "libvndksupport",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21784,6 +21869,9 @@ cc_prebuilt_library_shared {
                 "libwfdavenhancements",
                 "libhidlbase",
                 "vendor.qti.hardware.wifidisplaysession@1.0",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",
@@ -22532,6 +22620,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.imsrtpservice@3.0",
     owner: "sony",
     strip: {
@@ -22576,6 +22690,33 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qccsyshal_aidl-V1-ndk",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -22799,9 +22940,9 @@ android_app_import {
 }
 
 android_app_import {
-    name: "QtiTelephony",
+    name: "QtiTelephonyService",
     owner: "sony",
-    apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
+    apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -22810,13 +22951,14 @@ android_app_import {
 }
 
 android_app_import {
-    name: "QtiTelephonyService",
+    name: "QtiTelephony",
     owner: "sony",
-    apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+    apk: "proprietary/system_ext/priv-app/QtiTelephony/QtiTelephony.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
     },
+    privileged: true,
     system_ext_specific: true,
 }
 
@@ -23065,6 +23207,15 @@ dex_import {
 }
 
 dex_import {
+    name: "vendor.qti.ims.connectionaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.qti.ims.factory-V2.0-java",
     owner: "sony",
     jars: [
@@ -23087,6 +23238,15 @@ dex_import {
     owner: "sony",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.factoryaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar",
     ],
     system_ext_specific: true,
 }
@@ -23119,6 +23279,15 @@ dex_import {
 }
 
 dex_import {
+    name: "vendor.qti.ims.rcssipaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.qti.ims.rcsuce-V1.0-java",
     owner: "sony",
     jars: [
@@ -23141,6 +23310,15 @@ dex_import {
     owner: "sony",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.qti.ims.rcsuceaidlservice-V1-java",
+    owner: "sony",
+    jars: [
+        "proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar",
     ],
     system_ext_specific: true,
 }
@@ -24827,6 +25005,7 @@ cc_prebuilt_binary {
                 "android.hardware.security.rkp-V3-ndk",
                 "liblog",
                 "libutils",
+                "libcutils",
                 "libhidlbase",
                 "libmiscta",
                 "vendor.somc.hardware.security.secd@1.1",
@@ -24846,6 +25025,39 @@ cc_prebuilt_binary {
                 "vendor.qti.hardware.soter@1.0",
                 "libifaa",
                 "liboemcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.semc.hardware.spc-service",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.semc.hardware.spc-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "libmiscta",
+                "libcutils",
+                "vendor.semc.hardware.spc-V1-ndk_platform",
+                "libdevice_security_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -26794,6 +27006,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libfmq",
                 "libbinder",
+                "libcutils",
                 "liblog",
                 "vendor.qti.hardware.qccsyshal@1.2-halimpl",
                 "vendor.qti.hardware.qccsyshal@1.2",
