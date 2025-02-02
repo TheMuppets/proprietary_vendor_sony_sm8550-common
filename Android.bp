@@ -26883,6 +26883,34 @@ cc_prebuilt_binary {
     system_ext_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "taimport_vendor",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/taimport_vendor",
+            ],
+            shared_libs: [
+                "libta",
+                "liblog",
+                "libcutils",
+                "libmiscta",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    device_specific: true,
+}
+
 install_symlink {
     name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
     system_ext_specific: true,

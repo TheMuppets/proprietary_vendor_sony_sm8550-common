@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/sm8550-common
 
 PRODUCT_COPY_FILES += \
+    vendor/sony/sm8550-common/proprietary/odm/etc/init/taimport_vendor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/taimport_vendor.rc \
     vendor/sony/sm8550-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
     vendor/sony/sm8550-common/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/sony/sm8550-common/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
@@ -1398,7 +1399,8 @@ PRODUCT_PACKAGES += \
     dpmd \
     qccsyshal@1.2-service \
     tcmd \
-    wfdservice64
+    wfdservice64 \
+    taimport_vendor
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
