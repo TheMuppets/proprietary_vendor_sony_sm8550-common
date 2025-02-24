@@ -871,7 +871,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "bix.fingerprint.default",
+    name: "fingerprint.default",
     owner: "sony",
     strip: {
         none: true,
@@ -879,7 +879,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/bix.fingerprint.default.so",
+                "proprietary/vendor/lib64/hw/fingerprint.default.so",
             ],
             shared_libs: [
                 "liblog",
@@ -19551,31 +19551,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.semc.hardware.fingerprint-V1-ndk_platform",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.semc.hardware.fingerprint-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.semc.hardware.spc-V1-ndk_platform",
     owner: "sony",
     strip: {
@@ -23486,15 +23461,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.egistec.hardware.fingerprint.xml",
-    owner: "sony",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.egistec.hardware.fingerprint.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.gnss-service.xml",
     owner: "sony",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml",
@@ -24003,43 +23969,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service-rbs",
-    owner: "sony",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs",
-            ],
-            shared_libs: [
-                "lib_bix_idd",
-                "libbinder",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "android.hardware.biometrics.fingerprint@2.1",
-                "vendor.egistec.hardware.fingerprint@4.0",
-                "libhardware",
-                "libbase",
-                "vendor.semc.hardware.fingerprint-V1-ndk_platform",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
