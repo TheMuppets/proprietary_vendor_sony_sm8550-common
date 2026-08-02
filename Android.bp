@@ -25312,7 +25312,7 @@ cc_prebuilt_binary {
                 "libdiag",
                 "liblog",
                 "libcutils",
-                "libcrypto",
+                "libcrypto-v33",
                 "libxml2",
                 "libmiscta",
                 "libta",
